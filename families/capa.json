@@ -1,0 +1,38 @@
+{
+  "family": "capa",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "180:24",
+      "name": "tpl-capa-v1",
+      "family": "capa",
+      "width": 794,
+      "height": 1123,
+      "child_count": 5
+    },
+    {
+      "id": "180:34",
+      "name": "tpl-capa-v2",
+      "family": "capa",
+      "width": 794,
+      "height": 1123,
+      "child_count": 5
+    },
+    {
+      "id": "180:43",
+      "name": "tpl-capa-v3",
+      "family": "capa",
+      "width": 794,
+      "height": 1123,
+      "child_count": 7
+    },
+    {
+      "id": "180:54",
+      "name": "tpl-capa-v4",
+      "family": "capa",
+      "width": 794,
+      "height": 1123,
+      "child_count": 7
+    }
+  ]
+}

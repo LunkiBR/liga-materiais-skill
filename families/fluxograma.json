@@ -1,0 +1,22 @@
+{
+  "family": "fluxograma",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "183:260",
+      "name": "tpl-fluxograma-original",
+      "family": "fluxograma",
+      "width": 794,
+      "height": 1123,
+      "child_count": 4
+    },
+    {
+      "id": "194:2478",
+      "name": "tpl-fluxograma-variacoes",
+      "family": "fluxograma",
+      "width": 6848,
+      "height": 1283,
+      "child_count": 8
+    }
+  ]
+}

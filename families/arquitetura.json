@@ -1,0 +1,14 @@
+{
+  "family": "arquitetura",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "183:325",
+      "name": "tpl-arquitetura-original",
+      "family": "arquitetura",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}

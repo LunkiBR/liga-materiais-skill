@@ -1,0 +1,46 @@
+{
+  "family": "framework",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "187:490",
+      "name": "tpl-framework-original",
+      "family": "framework",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "194:1705",
+      "name": "tpl-framework-centered",
+      "family": "framework",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1743",
+      "name": "tpl-framework-layered",
+      "family": "framework",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1785",
+      "name": "tpl-framework-navy",
+      "family": "framework",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1827",
+      "name": "tpl-framework-split",
+      "family": "framework",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}

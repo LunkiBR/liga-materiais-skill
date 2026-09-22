@@ -1,0 +1,62 @@
+{
+  "family": "body",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "177:131",
+      "name": "tpl-body-original",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "183:45",
+      "name": "tpl-body-twocol",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "187:596",
+      "name": "tpl-body-sidebar-v2",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "194:468",
+      "name": "tpl-body-twocolumn",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 4
+    },
+    {
+      "id": "194:493",
+      "name": "tpl-body-sidebar",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:521",
+      "name": "tpl-body-technical",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:549",
+      "name": "tpl-body-callout",
+      "family": "body",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}

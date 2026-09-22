@@ -1,0 +1,46 @@
+{
+  "family": "citacao",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "187:176",
+      "name": "tpl-citacao-original",
+      "family": "citacao",
+      "width": 794,
+      "height": 1123,
+      "child_count": 4
+    },
+    {
+      "id": "194:582",
+      "name": "tpl-citacao-centered",
+      "family": "citacao",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:605",
+      "name": "tpl-citacao-editorial",
+      "family": "citacao",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:625",
+      "name": "tpl-citacao-sidebar",
+      "family": "citacao",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:649",
+      "name": "tpl-citacao-typographic",
+      "family": "citacao",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}

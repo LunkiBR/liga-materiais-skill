@@ -1,0 +1,46 @@
+{
+  "family": "praticas",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "187:417",
+      "name": "tpl-praticas-original",
+      "family": "praticas",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "194:1425",
+      "name": "tpl-praticas-columns",
+      "family": "praticas",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1500",
+      "name": "tpl-praticas-cards",
+      "family": "praticas",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1573",
+      "name": "tpl-praticas-navy",
+      "family": "praticas",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:1647",
+      "name": "tpl-praticas-bands",
+      "family": "praticas",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}

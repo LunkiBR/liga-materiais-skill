@@ -1,0 +1,54 @@
+{
+  "family": "chapter",
+  "source_page": "198:2",
+  "templates": [
+    {
+      "id": "177:83",
+      "name": "tpl-chapter-original",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 4
+    },
+    {
+      "id": "183:7",
+      "name": "tpl-chapter-dense",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "194:352",
+      "name": "tpl-chapter-fullbleed",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 4
+    },
+    {
+      "id": "194:385",
+      "name": "tpl-chapter-banded",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    },
+    {
+      "id": "194:414",
+      "name": "tpl-chapter-split",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 2
+    },
+    {
+      "id": "194:443",
+      "name": "tpl-chapter-minimal",
+      "family": "chapter",
+      "width": 794,
+      "height": 1123,
+      "child_count": 3
+    }
+  ]
+}
