@@ -1,0 +1,383 @@
+{
+ "formato": "documento-a4",
+ "fontes": {
+  "origem": "Guia do Antigravity IDE, PS 2026.2 (material anterior, páginas 03, 05 e 10) e orientações da equipe de Formação",
+  "palavras": 1150,
+  "resumo": false,
+  "unidades": [
+   {
+    "id": "u1",
+    "origem": "p. 01",
+    "tipo": "tese",
+    "resumo": "o guia prepara o candidato para construir e entregar o case com o Antigravity"
+   },
+   {
+    "id": "u2",
+    "origem": "p. 01",
+    "tipo": "contexto",
+    "resumo": "o que é o Antigravity: IDE com agente que lê, propõe, executa e pede aprovação"
+   },
+   {
+    "id": "u3",
+    "origem": "p. 01",
+    "tipo": "critério",
+    "resumo": "a avaliação olha como o candidato conduz o trabalho, não a ferramenta"
+   },
+   {
+    "id": "u4",
+    "origem": "p. 01",
+    "tipo": "requisito",
+    "resumo": "computador, internet, conta Google, 40 minutos"
+   },
+   {
+    "id": "u5",
+    "origem": "p. 03",
+    "tipo": "passo",
+    "resumo": "baixar pelo site oficial, bloco Standalone"
+   },
+   {
+    "id": "u6",
+    "origem": "p. 03",
+    "tipo": "tabela",
+    "resumo": "instalador certo por processador"
+   },
+   {
+    "id": "u7",
+    "origem": "p. 03",
+    "tipo": "aviso",
+    "resumo": "Windows precisa ser 64 bits; como conferir"
+   },
+   {
+    "id": "u8",
+    "origem": "p. 03",
+    "tipo": "passo",
+    "resumo": "como conferir o tipo de processador no Windows e no Mac"
+   },
+   {
+    "id": "u9",
+    "origem": "p. 05",
+    "tipo": "explicação",
+    "resumo": "configuração inicial define autonomia do agente e políticas"
+   },
+   {
+    "id": "u10",
+    "origem": "p. 05",
+    "tipo": "comparação",
+    "resumo": "os quatro modos: strict, review-driven, agent-driven, custom"
+   },
+   {
+    "id": "u11",
+    "origem": "p. 05",
+    "tipo": "recomendação",
+    "resumo": "review-driven é o recomendado para quem começa"
+   },
+   {
+    "id": "u12",
+    "origem": "p. 05",
+    "tipo": "explicação",
+    "resumo": "política de terminal: preferir que peça permissão"
+   },
+   {
+    "id": "u13",
+    "origem": "p. 10",
+    "tipo": "passo",
+    "resumo": "testar a aplicação como quem nunca a viu"
+   },
+   {
+    "id": "u14",
+    "origem": "p. 10",
+    "tipo": "lista",
+    "resumo": "conteúdo obrigatório do README"
+   },
+   {
+    "id": "u15",
+    "origem": "p. 10",
+    "tipo": "aviso",
+    "resumo": "não publicar senhas ou chaves no repositório"
+   },
+   {
+    "id": "u16",
+    "origem": "p. 10",
+    "tipo": "exemplo",
+    "resumo": "prompts de exemplo para testar e para preparar o README"
+   },
+   {
+    "id": "u17",
+    "origem": "p. 10",
+    "tipo": "transição",
+    "resumo": "próximas páginas tratam de GitHub e envio ao LunkiBR"
+   },
+   {
+    "id": "u18",
+    "origem": "p. 10",
+    "tipo": "esclarecimento",
+    "resumo": "não é obrigatório publicar a aplicação em um site"
+   },
+   {
+    "id": "u19",
+    "origem": "p. 10",
+    "tipo": "passo",
+    "resumo": "conferir a versão entregue e se os arquivos estão corretos antes de enviar"
+   }
+  ],
+  "cortes": {
+   "u17": "remete a páginas do material antigo que não fazem parte deste guia; a entrega pelo GitHub terá guia próprio"
+  }
+ },
+ "doc": {
+  "title": "Guia do Antigravity IDE",
+  "short": "Guia do Antigravity IDE · PS 2026.2",
+  "pageName": "Material — Guia do Antigravity IDE"
+ },
+ "cover": {
+  "variant": 2,
+  "title": "Guia do",
+  "titleLight": "Antigravity IDE",
+  "subtitle": "Como instalar, configurar e usar a ferramenta para construir a aplicação do case",
+  "seal": "PS 2026.2"
+ },
+ "blocks": [
+  {
+   "t": "chapter",
+   "n": "01",
+   "title": "Antes de começar",
+   "src": "u1",
+   "lead": "Este guia leva você da instalação do Antigravity IDE até a revisão final do case técnico, com o que fazer em cada etapa e como conferir se deu certo."
+  },
+  {
+   "t": "p",
+   "src": "u2",
+   "text": "O Antigravity é um ambiente de desenvolvimento em que um agente de IA trabalha junto com você. Ele lê os arquivos do projeto, propõe mudanças, executa comandos no terminal e, nas etapas que você definir, pede a sua aprovação antes de seguir. Na prática, você descreve o que quer construir e acompanha o agente fazendo, corrigindo o rumo sempre que algo não estiver como você imaginou."
+  },
+  {
+   "t": "p",
+   "src": "u3",
+   "text": "Para o processo seletivo, o Antigravity é a ferramenta recomendada, mas não é ela que está sendo avaliada. O que observamos é **como você conduz o trabalho**: se entende o que o agente está fazendo, se revisa antes de aceitar e se consegue explicar as decisões que tomou. Um projeto simples, bem conduzido e bem explicado vale mais do que um projeto grande que você não sabe defender."
+  },
+  {
+   "t": "h2",
+   "text": "O que você vai precisar",
+   "src": "u4"
+  },
+  {
+   "t": "p",
+   "src": "u4",
+   "text": "A instalação e a configuração levam cerca de 40 minutos. Separe esse tempo de uma vez só: a primeira configuração define quanto o agente pode fazer sozinho, e é mais fácil decidir com calma do que voltar depois para ajustar."
+  },
+  {
+   "t": "list",
+   "src": "u4",
+   "items": [
+    "Um computador com Windows 10 ou superior de 64 bits, macOS ou Linux.",
+    "Conexão estável com a internet durante o download e a instalação.",
+    "Uma conta Google, usada para entrar no Antigravity pela primeira vez.",
+    "Cerca de 40 minutos sem interrupções para instalar, configurar e testar."
+   ]
+  },
+  {
+   "t": "chapter",
+   "n": "02",
+   "title": "Instale a versão certa para o seu computador",
+   "short": "Instalação",
+   "src": "u5",
+   "lead": "O instalador muda conforme o sistema e o processador. Escolher o arquivo errado é o problema mais comum nesta etapa."
+  },
+  {
+   "t": "steps",
+   "src": [
+    "u5",
+    "u6"
+   ],
+   "items": [
+    {
+     "title": "Acesse a página oficial de download",
+     "text": "Abra `antigravity.google/download` no navegador e escolha o sistema do seu computador: Windows, macOS ou Linux."
+    },
+    {
+     "title": "Encontre o bloco “Antigravity IDE (Standalone)”",
+     "text": "Role até a seção “Antigravity for IDEs”. O bloco do aplicativo independente fica abaixo das extensões para outros editores; é ele que você vai baixar.",
+     "figure": {
+      "key": "download-standalone",
+      "ratio": 2.2,
+      "caption": "O bloco do aplicativo independente, com Windows selecionado. Os destaques marcam o nome do IDE e o botão de download.",
+      "width": 5
+     }
+    },
+    {
+     "title": "Escolha o instalador do seu processador",
+     "text": "x64 e ARM64 são tipos de processador. Use a tabela abaixo para escolher; se não souber qual é o seu, confira antes de baixar."
+    },
+    {
+     "title": "Instale e abra o aplicativo",
+     "text": "Abra o arquivo baixado, conclua a instalação seguindo as orientações do seu sistema e inicie o Antigravity IDE. Na primeira abertura, ele pede para você entrar com a conta Google."
+    }
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Qual instalador escolher",
+   "src": "u6"
+  },
+  {
+   "t": "table",
+   "src": "u6",
+   "head": [
+    "Seu computador",
+    "Opção no bloco do IDE"
+   ],
+   "cols": [
+    1.2,
+    1
+   ],
+   "rows": [
+    [
+     "Windows com processador x64 (Intel ou AMD)",
+     "**Download for x64**"
+    ],
+    [
+     "Windows com processador ARM64",
+     "**Download for ARM64**"
+    ],
+    [
+     "Mac com chip Apple Silicon (M1, M2 ou posterior)",
+     "**Download for Apple Silicon**"
+    ],
+    [
+     "Mac com processador Intel",
+     "**Download for Intel**"
+    ],
+    [
+     "Linux",
+     "**x64** ou **ARM64**, conforme o processador"
+    ]
+   ],
+   "note": "Fonte: página oficial de download, consultada em 02/10/2026."
+  },
+  {
+   "t": "h3",
+   "text": "Como conferir o tipo do seu computador",
+   "src": "u8"
+  },
+  {
+   "t": "p",
+   "src": "u8",
+   "text": "No Windows, abra Configurações > Sistema > Sobre e procure **Tipo de sistema**, em “Especificações do dispositivo”: a linha indica se o sistema é de 64 bits e se o processador é x64 ou ARM. No Mac, abra o menu Apple e escolha **Sobre Este Mac**: a indicação “Chip” identifica um Apple Silicon, e a indicação “Processador” com o nome Intel identifica um Mac Intel."
+  },
+  {
+   "t": "callout",
+   "kind": "atencao",
+   "src": "u7",
+   "text": "O Antigravity IDE exige Windows de 64 bits. Se o instalador não abrir ou mostrar um erro de compatibilidade, confira o tipo de sistema antes de tentar outro arquivo."
+  },
+  {
+   "t": "chapter",
+   "n": "03",
+   "title": "Defina quanto o agente pode fazer sozinho",
+   "short": "Configuração",
+   "src": "u9",
+   "lead": "Na primeira abertura, o Antigravity pergunta como o agente deve trabalhar. Essa escolha define quando ele avança sozinho e quando espera a sua aprovação."
+  },
+  {
+   "t": "p",
+   "src": "u9",
+   "text": "A tela de configuração inicial combina um modo de trabalho com três políticas: a de terminal, que controla os comandos executados no seu computador; a de revisão, que define quando o agente pede para você olhar o que fez; e a de JavaScript, que controla a execução de código no navegador. Você pode mudar todas depois, nas configurações, mas começar bem evita surpresas."
+  },
+  {
+   "t": "cards",
+   "src": "u10",
+   "items": [
+    {
+     "eyebrow": "Mais controle",
+     "title": "Strict Mode",
+     "text": "O agente pede permissão para cada ação. É lento, mas ótimo para entender o que ele faz."
+    },
+    {
+     "eyebrow": "Recomendado",
+     "title": "Review-driven",
+     "text": "O agente avança sozinho e pede a sua revisão nas etapas importantes."
+    },
+    {
+     "eyebrow": "Mais autonomia",
+     "title": "Agent-driven",
+     "text": "O agente decide e executa quase tudo. Exige experiência para revisar depois."
+    },
+    {
+     "eyebrow": "Avançado",
+     "title": "Custom",
+     "text": "Você define cada política separadamente: terminal, revisão e JavaScript."
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "src": [
+    "u11",
+    "u12"
+   ],
+   "text": "Para quem está começando, **Review-driven development** é a escolha mais segura, e é também a opção recomendada pelo próprio Google. Na política de terminal, prefira que o agente peça permissão antes de executar comandos: você vê o que vai rodar no seu computador e aprende o que cada comando faz."
+  },
+  {
+   "t": "chapter",
+   "n": "04",
+   "title": "Revise antes de entregar",
+   "short": "Entrega",
+   "src": "u13",
+   "lead": "Antes de publicar o projeto, teste a aplicação como alguém que nunca a viu e prepare um README que explique o que você construiu."
+  },
+  {
+   "t": "p",
+   "src": "u13",
+   "text": "Abra a aplicação do zero e use-a como um avaliador usaria: siga o caminho principal, tente o que não é óbvio e anote o que ficou confuso ou quebrado. Peça ao agente para corrigir cada ponto e, depois, para explicar o que mudou. Esse ciclo de testar, pedir e revisar é justamente o que mostra que você entende o próprio projeto."
+  },
+  {
+   "t": "code",
+   "src": "u16",
+   "text": "Teste a aplicação como alguém que nunca a viu. Liste o que está confuso ou faltando e corrija. Depois me explique o que mudou."
+  },
+  {
+   "t": "h3",
+   "text": "O que o README precisa ter",
+   "src": "u14"
+  },
+  {
+   "t": "p",
+   "src": [
+    "u14",
+    "u19"
+   ],
+   "text": "O README é a primeira coisa que o avaliador lê. Ele explica o que você construiu e como testar, sem que ninguém precise perguntar. Escreva-o curto e prático e, antes de enviar, confira se a versão descrita é a mesma que está no repositório e se todos os arquivos necessários foram incluídos."
+  },
+  {
+   "t": "list",
+   "src": "u14",
+   "items": [
+    "Seu nome e a área de interesse que você escolheu no processo seletivo.",
+    "A finalidade da solução: que problema ela resolve e para quem.",
+    "Instruções passo a passo para abrir e testar a aplicação em outro computador."
+   ]
+  },
+  {
+   "t": "p",
+   "src": "u16",
+   "text": "O agente pode ajudar a escrever o README a partir do próprio projeto. Peça um primeiro rascunho e revise com atenção: confira se as instruções funcionam de verdade, seguindo-as você mesmo em uma pasta limpa."
+  },
+  {
+   "t": "code",
+   "src": "u16",
+   "text": "Me guie para preparar o README com meu nome, minha área de interesse, a finalidade da solução e como abrir e testar a aplicação."
+  },
+  {
+   "t": "p",
+   "src": "u18",
+   "text": "Não é obrigatório publicar a aplicação em um site. O que importa é que o avaliador consiga abrir e testar o projeto a partir das instruções do README, no próprio computador."
+  },
+  {
+   "t": "callout",
+   "kind": "atencao",
+   "src": "u15",
+   "title": "Alerta de segurança",
+   "text": "Antes de publicar, confira que o repositório não contém senhas, chaves de acesso nem arquivos pessoais. Se o agente pedir uma credencial no chat, pare e não a informe."
+  }
+ ],
+ "backcover": {}
+}

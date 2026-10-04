@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+# registros de produção (materiais reais) e cache do publicador
+runs/*
+!runs/.gitkeep
+scripts/.publicado/

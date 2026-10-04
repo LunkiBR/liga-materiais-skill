@@ -1,46 +1,39 @@
 # Liga Materiais
 
-Skill para criar ou adaptar materiais da Liga IA UFSCar a partir de Markdown, PDF ou outras fontes, usando o Design System e os templates atuais no Figma.
+Skill que transforma contexto bruto (playbooks, guias, notas, PDFs) em materiais da Liga IA UFSCar montados no Figma, com o sistema visual da Liga.
 
-## Conteúdo
+## Como funciona
 
-- `SKILL.md`: instruções principais da skill.
-- `references/`: ingestão, playbook e checagem de vigência.
-- `families/`: catálogo de famílias de templates.
-- `index.json`: índice local de descoberta.
-- `catalog.py`: utilitário de consulta do catálogo.
-- `tests/`: testes do catálogo.
-- `runs/`: exemplo de execução documentada.
-- `example-source.md`: fonte de exemplo.
+1. A IA lê a fonte e escreve um **plano**: uma lista de blocos de conteúdo (capítulos, passos, tabelas, callouts, slides…) com a origem de cada trecho.
+2. Um **motor** no Figma monta o material a partir do plano. Ele aplica grid, tipografia, cores, paginação, cabeçalho, rodapé e capas.
+3. O motor roda um **QA numérico** (ocupação de página, títulos órfãos, palavras por slide, fontes, margens). A IA corrige o plano até o QA ficar limpo.
 
-## Uso no Codex
+## Formatos
 
-Copie esta pasta para o diretório de skills do Codex:
+| Formato | Pasta | Motor no Figma |
+|---|---|---|
+| Documento A4 / PDF | `documento-a4/` | `lib/LIA_A4` |
+| Apresentação 16:9, para projetar (P) ou ler (L) | `apresentacao-16x9/` | `lib/LIA_DECK` |
 
-```text
-<CODEX_HOME>/skills/liga-materiais
-```
+O roteador em `SKILL.md` abre só a pasta do formato pedido.
 
-Depois, invoque a skill quando precisar criar ou adaptar um material institucional, playbook ou documento paginado da Liga.
+## Estrutura
 
-## Princípios
+- `SKILL.md`: roteador e fluxo de execução.
+- `shared/`: ingestão de fontes, roteiro editorial e manutenção do sistema.
+- `documento-a4/`, `apresentacao-16x9/`: especificação (`FORMAT.md`), motor (`build.js`) e plano de exemplo.
+- `scripts/`: `validar_plano.py`, `chamada.py` (gera a chamada ao Figma) e `publicar.py` (publica os motores).
+- `research/`: pesquisas que fundamentam os números do sistema.
+- `runs/`: planos e mapas de cada material produzido.
+- `tests/`: `python -m unittest discover -s tests`.
 
-- Preservar a fidelidade da fonte e registrar as origens.
-- Selecionar templates originais antes de criar estruturas novas.
-- Validar os nós atuais no Figma antes da produção.
-- Revisar legibilidade, hierarquia, editabilidade e ocupação editorial.
-- Entregar limitações e mapa de execução de forma explícita.
+## Sistema no Figma
 
-## Referências visuais
+Arquivo `rbxe2L7fFOqKELar7dZ9zD`, página **Sistema — Materiais**:
 
-A fonte de verdade visual indicada pela skill é o arquivo [Design System — Liga](https://www.figma.com/design/rbxe2L7fFOqKELar7dZ9zD/Liga?node-id=167-52), com o catálogo de templates na página `198:2`.
+- as capas A4 v1–v4 e a contracapa (componentes);
+- a coleção de cores `Liga / Materiais`;
+- os estilos `Material A4/*`, `Deck P/*` e `Deck L/*`;
+- os dois motores.
 
-## Desenvolvimento
-
-Execute os testes do catálogo com:
-
-```bash
-python -m unittest discover -s tests
-```
-
-O conteúdo deste repositório é uma cópia versionada da skill disponível no ambiente Codex do autor.
+As páginas "Exemplo — …" mostram cada motor em uso.

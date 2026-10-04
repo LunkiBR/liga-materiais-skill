@@ -1,0 +1,29 @@
+{
+ "formato": "apresentacao-16x9",
+ "fontes": {
+  "origem": "Carrossel OpenAI Dots v3 (LIA News) e VentureBeat, out. 2026",
+  "palavras": 620,
+  "resumo": false,
+  "unidades": [
+   {"id": "u1", "origem": "carrossel 01", "tipo": "tese", "resumo": "Dots continuam trabalhando depois que você fecha o chat"},
+   {"id": "u2", "origem": "carrossel 02", "tipo": "definição", "resumo": "agente que recebe objetivo, não só pergunta"},
+   {"id": "u3", "origem": "VentureBeat", "tipo": "fato", "resumo": "computador e navegador próprios, apps autorizados, mensagens"},
+   {"id": "u4", "origem": "VentureBeat", "tipo": "número", "resumo": "primeiro Dot incluso no Pro e Business Premium; Edu/Enterprise em beta"},
+   {"id": "u5", "origem": "carrossel 04", "tipo": "comparação", "resumo": "chat de hoje x Dot"},
+   {"id": "u6", "origem": "carrossel 05", "tipo": "exemplo", "resumo": "um dia com um Dot: 09h, 15h, 21h"},
+   {"id": "u7", "origem": "VentureBeat", "tipo": "aviso", "resumo": "ele erra; ações sensíveis ficam com você; regras personalizadas"},
+   {"id": "u8", "origem": "carrossel 08", "tipo": "fechamento", "resumo": "LIA traduz o que muda na rotina"}
+  ],
+  "cortes": {}
+ },
+ "doc": {"title": "OpenAI Dots no dia a dia", "mode": "P", "footer": "LIA News", "pageName": "Apresentação — OpenAI Dots no dia a dia"},
+ "slides": [
+  {"t": "cover", "src": "u1", "variant": 2, "seal": "LIA NEWS", "title": "OpenAI Dots", "titleLight": "no dia a dia", "subtitle": "O que muda quando a IA continua trabalhando depois que você fecha o chat", "meta": "Encontro de Formação · outubro de 2026"},
+  {"t": "statement", "src": "u2", "text": "A IA deixa de esperar o próximo prompt e passa a ==trabalhar entre conversas==."},
+  {"t": "content", "src": ["u3", "u4"], "title": "Um Dot segue trabalhando depois que você fecha o chat", "bullets": ["Tem computador e navegador próprios na nuvem", "Usa só os apps que você autorizar", "Volta até você para pedir aprovação"], "side": {"value": "1º", "label": "Dot incluso nos planos Pro e Business Premium", "source": "VentureBeat, out. 2026"}},
+  {"t": "columns", "src": "u5", "title": "Você deixa de pedir e passa a delegar", "cols": [{"label": "No chat, hoje", "title": "Pedido a pedido", "items": ["Você pergunta e copia a resposta", "Amanhã, explica tudo de novo"]}, {"label": "Com um Dot", "title": "Objetivo contínuo", "items": ["Você define o objetivo uma vez", "Ele avança e te atualiza"], "accent": true}]},
+  {"t": "timeline", "src": "u6", "title": "Um trabalho em grupo avança enquanto você vive o dia", "items": [{"date": "09h", "title": "Você define o objetivo", "text": "Manter o resumo das fontes atualizado"}, {"date": "15h", "title": "Ele acha algo novo", "text": "E pergunta se deve incluir", "current": true}, {"date": "21h", "title": "Você aprova no celular", "text": "Pelo chat, em segundos"}]},
+  {"t": "cards", "src": "u7", "title": "Antes de delegar, três cuidados", "items": [{"eyebrow": "Revisão", "title": "Ele ainda erra", "text": "Revise o que for importante."}, {"eyebrow": "Controle", "title": "Ações sensíveis são suas", "text": "Senhas continuam com você."}, {"eyebrow": "Acesso", "title": "Ainda não é para todos", "text": "Edu e Enterprise em beta."}]},
+  {"t": "closing", "src": "u8", "title": "Obrigado", "text": "Traga um caso do seu dia para testarmos juntos.", "contact": ["@ligaia.ufscar"]}
+ ]
+}
